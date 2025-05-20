@@ -1,4 +1,7 @@
 package com.pbsuperior.fnlist.repositories;
 
-public interface IGameRepository {
+import com.pbsuperior.fnlist.entities.Game;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IGameRepository extends JpaRepository<Game,Long> {
 }
